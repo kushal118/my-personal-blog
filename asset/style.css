@@ -1,3 +1,502 @@
-h1{
-    color: rgb(255, 127, 157);
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&family=Rubik+Distressed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+
+}
+
+
+header {
+    background-color: #FFE7E7;
+    height: 365px;
+}
+
+
+
+h2 {
+    display: block;
+    font-size: 30px;
+
+    font-weight: bold;
+    color: #1044FF;
+    font-family: sans-serif;
+}
+
+
+
+
+nav {
+    position: absolute;
+    width: 1238px;
+    height: 75px;
+    left: 38%;
+    top: 0px;
+}
+
+button {
+    position: absolute;
+    width: 6%;
+    height: 5%;
+    left: 91%;
+    top: 1%;
+    background: #1044FF;
+    border-radius: 10px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    color: #ffff;
+    transition: background 2s;
+
+}
+
+button:hover {
+    background: #7A4495;
+}
+
+.navigation {
+    align-items: center;
+}
+
+.navigation li {
+    list-style: none;
+    float: left;
+}
+
+.navigation li a {
+    color: #1044FF;
+
+    padding: 0px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.navigation li a i {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn {
+    margin: 0px;
+    float: right;
+}
+
+.show-menu-btn i {
+    line-height: 100px;
+}
+
+.navigation a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #ac7eb4;
+}
+
+#toggle-btn {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+figure {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 15% 0 1%;
+    font-weight: 600;
+    font-size: 40px;
+    color: #1044FF;
+
+}
+
+.figure-tag {
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1044FF;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+
+}
+
+
+.sign-up-text {
+    color: #7A4495;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'DynaPuff', cursive;
+    word-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.sign-up-btn {
+    box-shadow: inset 0px 2px 0px 0px #efdcfb;
+    background: linear-gradient(to bottom, #e90909 5%, #d9d929 100%);
+    background-color: #dfbdfa;
+    border-radius: 17px;
+    border: 1px solid #c584f3;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 12px 23px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #d50c20;
+}
+
+.sign-up-btn:hover {
+    background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+    background-color: #1d12e9;
+}
+
+.sign-up-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+#blog {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EBFFFA;
+    height: 40%;
+}
+
+.blog>div {
+    flex: 50%;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #EBFFFA;
+    max-width: 65%;
+    max-height: 40%;
+    column-gap: 50px;
+    justify-content: center;
+    margin: 38px 0;
+    align-content: space-between;
+    box-shadow: 10px 0px 16px #514a4a;
+
+
+}
+
+.card {
+    width: 40%;
+    height: 42%;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 22px 30px 19px #514a4a;
+    margin: 5% 2% 4%;
+    background-color: #F5F0BB;
+    transition: all 250ms;
+    justify-content: center;
+
+
+    /* box-shadow was inspired from "https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"I */
+
+
+}
+
+.card:hover {
+    transform: scale(1.02)
+}
+
+.blogImg {
+    width: 85%;
+    height: 25%;
+    margin: 0 5%;
+    border-radius: 10%;
+}
+
+.card-body {
+    margin: 7px 13px;
+
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%;
+    padding-left: 0;
+    gap: 4%;
+    flex: 0 10;
+}
+
+.authorImg {
+    border-radius: 50%;
+    width: 13%;
+}
+
+.authorName {
+    font-style: italic;
+}
+
+.recent-post {
+    display: flex;
+    flex-direction: column;
+    background: rgba(244, 55, 228, 0.55);
+    border: 1px solid #1044FF;
+    border-radius: 3px;
+}
+
+.postcards {
+    display: flex;
+    align-items: flex-start;
+    box-shadow: none;
+    background-color: transparent;
+    margin-top: 22px;
+    padding: 9px 10px;
+}
+
+.postcards img {
+    width: 30%;
+    height: 20%;
+}
+
+.description {
+    font-style: italic;
+    margin: 3% 5%;
+}
+
+.card-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+li {
+    margin: 5px 5px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.end {
+    padding: 12%;
+}
+
+.top-sushi {
+    margin: 38px 12px 0 12px;
+    margin-left: 20px;
+    padding: 12px;
+    border: solid 2px rgb(9, 1, 1);
+    max-width: 30%;
+    width: 40%;
+    border-radius: 2%;
+    text-align: center;
+    background-color: #7A4495;
+    height: 1330px;
+    box-shadow: 10px 0px 16px #514a4a;
+
+
+}
+
+.sushi {
+    margin-bottom: 50px;
+    border: solid 1px gray;
+    background-color: #b825aab8;
+    border-radius: 3%;
+    padding: 7%;
+    box-shadow: 10px 21px 7px #514a4a;
+}
+
+
+.sushi li {
+    font-size: 2vh;
+    font-family: sans-serif;
+    padding: 8px;
+    font-weight: 600;
+    list-style: none;
+    text-align: center;
+    color: #EBFFFA;
+    border-bottom: 1px solid blue;
+
+}
+
+h5 {
+    font-size: 3vh;
+    font-weight: 700;
+    border-bottom: 3px solid #EBFFFA;
+    color: #fff;
+
+}
+
+#social-media {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+#social-media p {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.social-icons i {
+    padding: 0 30px;
+}
+
+.social-icons a i {
+    height: 60px;
+    width: 60px;
+    transition: 0.5s;
+    font-size: 25px;
+    padding: 12px 5px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    color: #fafafa;
+    background: #1c4979;
+}
+
+/*Hover effects for social media icons from https://www.w3schools.com/cssref/sel_hover.asp */
+.social-icons a:hover i {
+    transform: translateY(-20px);
+}
+
+/*-- Responsive CSS --*/
+
+@media screen and (max-width:767px) {
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .brand {
+        color: #fff;
+    }
+
+    .navigation {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #6b15a4;
+        ;
+        top: -103%;
+        left: 0;
+        padding: 50px 0px;
+        transition: 1s;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .navigation li a {
+        padding: 15px 15px;
+        text-align: left;
+    }
+
+    .navigation li a i {
+        width: auto;
+        font-size: 20px;
+    }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    #toggle-btn:checked~nav .navigation {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width:378px) {
+    h1 {
+        text-align: center;
+        padding: 20px 0;
+        font-weight: 600;
+        font-size: 31px;
+        color: #ffff;
+    }
+
+    .sign-up-text {
+        color: #7A4495;
+        font-weight: 500;
+        font-size: 11px;
+        font-family: 'DynaPuff', cursive;
+        word-spacing: 5px;
+        margin-bottom: 10px;
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    #blog {
+        display: block;
+        flex-wrap: wrap;
+        background-color: #EBFFFA;
+        height: 40%;
+    }
+
+    .card-container {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #EBFFFA;
+        max-width: 100%;
+        max-height: 82%;
+        column-gap: 71px;
+        justify-content: center;
+        margin: 38px 0;
+        align-content: space-between;
+        box-shadow: 10px 0px 16px #514a4a;
+    }
+
+    .card {
+        width: 93%;
+        height: 25%;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-shadow: 22px 30px 19px #514a4a;
+        margin: 5% 2% 4%;
+        background-color: #F5F0BB;
+        transition: all 250ms;
+        justify-content: center;
+    }
+
+    .top-sushi {
+        margin: 38px 12px 0 12px;
+        margin-left: 10px;
+        padding: 12px;
+        border: solid 2px rgb(9, 1, 1);
+        max-width: 92%;
+        border-radius: 2%;
+        text-align: center;
+        background-color: #7A4495;
+        height: 730px;
+        box-shadow: 10px 0px 16px #514a4a;
+
+
+    }
+
+
 }
