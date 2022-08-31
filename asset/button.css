@@ -1,0 +1,18 @@
+.sign-up {
+    position: absolute;
+    width: 6%;
+    height: 5%;
+    left: 91%;
+    top: 1%;
+    background: #1044FF;
+    border-radius: 10px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    color: #ffff;
+    transition: background 2s;
+
+}
+.sign-up:hover {
+    background: #7A4495;
+}
